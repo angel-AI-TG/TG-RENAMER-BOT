@@ -63,8 +63,6 @@ Please short your file name and try again!"""
 
 **🧰 Framework:** Pyrogram
 
-**👨‍💻 Developer:** [Anonymous](https://t.me/Ns_AnoNymouS)
-
 **📮 Channel:** [AI BOT UPDATES](https://t.me/AI_bot_projects)
 
 **👥 Group:** [AI BOT HELP](https://t.me/AI_BOT_HELP)
