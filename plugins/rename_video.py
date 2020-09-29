@@ -53,7 +53,7 @@ async def rename_video(bot, update):
                 )
             )
             return
-        description = Translation.CUSTOM_CAPTION_UL_FILE
+        description = file_name + Translation.CUSTOM_CAPTION_UL_FILE
         download_location = Config.DOWNLOAD_LOCATION + "/"
         b = await bot.send_message(
             chat_id=update.chat.id,
