@@ -3,7 +3,7 @@ from sample_config import Config
 class Translation(object):
     START_TEXT = """Hello <i><b>{}</b></i>,
 
-This is a simple Telegram Rename Bot!{}
+This is a simple Telegram Rename Bot!
 
 I Can rename ✍ with custom thumbnail and upload as video/file
 
@@ -14,7 +14,7 @@ Type /help for more details."""
     DOWNLOAD_START_VIDEO = "Downloading to my server.....📥\nplease wait"
     DOWNLOAD_START = "Downloading to my server.....📥\nplease wait"
     UPLOAD_START_VIDEO = "Uploading as video.....📤\nplease wait"
-    UPLOAD_START = "Uploading as File.....📤"
+    UPLOAD_START = "Uploading as File.....📤\nplease wait"
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.95GB due to Telegram API limitations.I can't do anything for that 🤷‍♂️."
     AFTER_SUCCESSFUL_UPLOAD_MSG = "**Thank you for Using Me🤓.**\n\n[Jσιɳ συɾ ƈԋαɳɳҽʅ](https://t.me/AI_bot_projects)**"
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds.\nUploaded in {} seconds."
@@ -30,14 +30,13 @@ Type /help for more details."""
     HELP_USER = """Hai <b><i>{}</i></b>, 
 
 
-    
 📌 If you need custom Thumbnail send the picture first (Optional)..
 
 📌 Now Send me any Telegram File which you want to Rename .
 
 📌 Reply to that message with <code>/rename new name.extension</code>. with custom thumbnail support.\n(upload as file)
 
-📌 Reply to that message with <code>/rename_vidoe new name.extension</code>. with custom thumbnail support.\n(uploading as Video)
+📌 Reply to that message with <code>/rename_video new name.extension</code>. with custom thumbnail support.\n(uploading as Video)
 
    
 <b>⚠️ Do one By One rename. Otherwise you will get Permenent Ban 🤷 ⚠️</b>
