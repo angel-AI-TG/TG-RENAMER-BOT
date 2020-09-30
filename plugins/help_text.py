@@ -61,18 +61,20 @@ async def start(bot, update):
         parse_mode="html",
         #reply_to_message_id=update.message_id
         reply_markup=InlineKeyboardMarkup(
-        [
-          [
-            InlineKeyboardButton('📌  Support Group', url='https://t.me/AI_BOT_HELP'),
-            InlineKeyboardButton('🔖  Projects Channel', url='https://t.me/AI_bot_projects')
-          ],
-          [
-            InlineKeyboardButton('👨‍💻  My Father', url='https://t.me/pppppgame')
-            InlineKeyboardButton('🚨  Youtube Channel', url='https://www.youtube.com/channel/UCyn07B5o6N67FkAEGmW5VfQ')
-          ]
-        ]
-       )
-     )
+            [
+                [
+                    InlineKeyboardButton('📌  Support Group', url='https://t.me/AI_BOT_HELP'),
+                    InlineKeyboardButton('🔖  Projects Channel', url='https://t.me/AI_bot_projects')
+                ],
+                [
+                    InlineKeyboardButton('👨‍💻  My Father', url='https://t.me/pppppgame')
+                    InlineKeyboardButton('🚨  Youtube Channel', url='https://www.youtube.com/channel/UCyn07B5o6N67FkAEGmW5VfQ')
+                ]
+            ]
+        )
+    )
+    
+    
 @pyrogram.Client.on_message(pyrogram.Filters.command(["upgrade"]))
 async def upgrade(bot, update):
     # logger.info(update)
