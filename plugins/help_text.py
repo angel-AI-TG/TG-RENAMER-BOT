@@ -57,7 +57,7 @@ async def start(bot, update):
     TRChatBase(update.from_user.id, update.text, "/start")
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.START_TEXT.format(update.from_user.first_name, Config.USER_NAME), 
+        text=Translation.START_TEXT.format(update.from_user.first_name), 
         parse_mode="html",
         #reply_to_message_id=update.message_id
         reply_markup=InlineKeyboardMarkup(
@@ -67,7 +67,7 @@ async def start(bot, update):
             InlineKeyboardButton('🔖  Projects Channel', url='https://t.me/AI_bot_projects')
           ],
           [
-            InlineKeyboardButton('👨‍💻  My Father', url=myfather)
+            InlineKeyboardButton('👨‍💻  My Father', url='https://t.me/pppppgame')
             InlineKeyboardButton('🚨  Youtube Channel', url='https://www.youtube.com/channel/UCyn07B5o6N67FkAEGmW5VfQ')
           ]
         ]
