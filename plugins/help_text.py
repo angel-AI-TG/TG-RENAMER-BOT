@@ -108,7 +108,7 @@ async def about(bot, update):
         reply_to_message_id=update.message_id
     )
 
-    @pyrogram.Client.on_message(pyrogram.Filters.command(["plan"]))
+@pyrogram.Client.on_message(pyrogram.Filters.command(["plan"]))
 async def get_me_info(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/plan")
