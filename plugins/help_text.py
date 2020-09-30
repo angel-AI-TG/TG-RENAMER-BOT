@@ -67,8 +67,8 @@ async def start(bot, update):
                     InlineKeyboardButton('🔖  Projects Channel', url='https://t.me/AI_bot_projects')
                 ],
                 [
-                    InlineKeyboardButton('👨‍💻  My Father', url='https://t.me/pppppgame')
-                    InlineKeyboardButton('🚨 Youtube Channel', url='https://www.youtube.com/channel/UCyn07B5o6N67FkAEGmW5VfQ')
+                    InlineKeyboardButton('👨‍💻  My Father', url='https://t.me/pppppgame'),
+                    InlineKeyboardButton('🚨  Youtube Channel', url='https://www.youtube.com/channel/UCyn07B5o6N67FkAEGmW5VfQ')
                 ]
             ]
         )
