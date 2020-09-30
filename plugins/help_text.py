@@ -63,7 +63,12 @@ async def start(bot, update):
         reply_markup=InlineKeyboardMarkup(
         [
           [
-          InlineKeyboardButton('My Father 👨‍💻', url=myfather)
+            InlineKeyboardButton('📌  Support Group', url='https://t.me/AI_BOT_HELP'),
+            InlineKeyboardButton('🔖  Projects Channel', url='https://t.me/AI_bot_projects')
+          ],
+          [
+            InlineKeyboardButton('👨‍💻  My Father', url=myfather)
+            InlineKeyboardButton('🚨  Youtube Channel', url='https://www.youtube.com/channel/UCyn07B5o6N67FkAEGmW5VfQ')
           ]
         ]
        )
@@ -84,11 +89,11 @@ async def upgrade(bot, update):
 async def donate(bot, update):
        await bot.send_message(
              chat_id=update.chat.id,
-             text="I am very happy to listen you this word, making of this bot take lot of work and time so please donate by pressing this button present below",
+             text="I am very happy to listen you this word, making of this bot take lot of work and time so please donate by pressing this button present below and contact my master",
              reply_markup=InlineKeyboardMarkup(
              [
                [
-                 InlineKeyboardButton('Donate 💰', url='http://paypal.me/maheshmalekar')
+                 InlineKeyboardButton('Donate 💰', url='https://t.me/pppppgame')
                ]
              ]
            )
@@ -100,5 +105,19 @@ async def about(bot, update):
         chat_id=update.chat.id,
         text=Translation.About.format(update.from_user.first_name),
         parse_mode="markdown",
+        reply_to_message_id=update.message_id
+    )
+
+    @pyrogram.Client.on_message(pyrogram.Filters.command(["plan"]))
+async def get_me_info(bot, update):
+    # logger.info(update)
+    TRChatBase(update.from_user.id, update.text, "/plan")
+    chat_id = str(update.from_user.id)
+    chat_id, plan_type, expires_at = GetExpiryDate(chat_id)
+    await bot.send_message(
+        chat_id=update.chat.id,
+        text=Translation.CURENT_PLAN_DETAILS.format(chat_id, plan_type, expires_at),
+        parse_mode="html",
+        disable_web_page_preview=True,
         reply_to_message_id=update.message_id
     )
