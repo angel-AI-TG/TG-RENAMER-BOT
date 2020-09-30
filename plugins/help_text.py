@@ -3,6 +3,8 @@
 # (c) Ns_AnoNymouS 
 
 # the logging things
+from pyrogram import Filters, InlineKeyboardMarkup, InlineKeyboardButton
+
 import logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -10,8 +12,6 @@ logger = logging.getLogger(__name__)
 
 import os
 import sqlite3
-
-from pyrogram import InlineKeyboardMarkup, InlineKeyboardButton
 
 # the secret configuration specific things
 if bool(os.environ.get("WEBHOOK", False)):
