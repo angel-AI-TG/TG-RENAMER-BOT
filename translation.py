@@ -27,6 +27,11 @@ Type /help for more details."""
     CUSTOM_CAPTION_UL_FILE = "renamed by\n  @TGrenamebyAI_bot"
     NO_CUSTOM_THUMB_NAIL_FOUND = "No Custom ThumbNail found."
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
+    CURENT_PLAN_DETAILS = """Current plan details
+--------
+Telegram ID: <code>{}</code>
+Plan name: Free User
+Expires on: 22ᵗʰ every month"""
     HELP_USER = """Hai <b><i>{}</i></b>, 
 
 
